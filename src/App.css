@@ -6,6 +6,7 @@
 
 .App-header {
   background-color: #1E1E1E;
+  font-size: 1vw; /* Adjust the value as needed */
   color: white;
   text-align: center;
   padding: 20px;
@@ -28,6 +29,26 @@ nav button {
 nav button:hover {
   background-color: white; /* Background color on hover */
   color: #1E1E1E; /* Text color on hover */
+}
+
+.download-button {
+  display: inline-block;
+  background-color: #1E1E1E; /* Match the background */
+  color: white;
+  border: 2px solid white; /* White stroke */
+  margin-top: 0px; /* Add some space above the button */
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  text-decoration: none; /* Remove underline from the link */
+  font-family: 'Pixel', monospace;
+  font-size: 20px; /* Adjust based on your design */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.download-button:hover {
+  background-color: white;
+  color: #1E1E1E;
 }
 
 .typing-text {
@@ -58,6 +79,8 @@ nav button:hover {
   width: 100%;
   height: auto;
   display: block; /* This removes any default inline padding and ensures it takes the full width */
+  border-radius: 50px; /* Adjusts the roundness of the corners */
+
 }
 
 
