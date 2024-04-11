@@ -35,7 +35,15 @@ Thank you for visiting, and I am excited to navigate the future of technology to
         </section>
         <section id="resume">
           <h2>Resume</h2>
+          <a 
+            href={resume} 
+            download="ItaiRaviv_Resume.png" 
+            className="download-button"
+          >
+            Download Resume
+          </a>
           <img src={resume} alt="Resume" className="resume-image" />
+
         </section>
         <section id="links">
           <h2>Links</h2>
