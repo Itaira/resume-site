@@ -12,6 +12,23 @@
   overflow: hidden; /* Keeps the content within the header */
 }
 
+
+nav button {
+  background-color: #1E1E1E; /* Match header background */
+  color: white; /* Text color */
+  border: 2px solid white; /* White stroke around the buttons */
+  margin: 20px 30px; /* Increase spacing between buttons */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-family: 'Pixel', monospace; /* Optionally match the font style */
+  cursor: pointer; /* Hand cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav button:hover {
+  background-color: white; /* Background color on hover */
+  color: #1E1E1E; /* Text color on hover */
+}
+
 .typing-text {
   display: inline-block;
   white-space: nowrap;
@@ -48,6 +65,9 @@ main {
   text-align: center;
   color: white;
   padding: 20px;
+  font-family: 'Pixel', monospace; /* Ensuring your custom font is applied */
+  font-size: 25px; /* Adjust based on your design */
+  line-height: 1.5; /* Adjust for tight text fit */
 }
 
 
