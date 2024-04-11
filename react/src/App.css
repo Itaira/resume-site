@@ -1,0 +1,58 @@
+/* Pixelated font style */
+@font-face {
+  font-family: 'Pixel';
+  src: url('/public/fonts/ByteBounce.ttf') format('truetype'),
+}
+
+.App-header {
+  background-color: #1E1E1E;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden; /* Keeps the content within the header */
+}
+
+.typing-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid transparent; /* Initially transparent to not add visual width */
+  animation: typing 4s steps(40, end) forwards, blink-caret .75s 6s step-end forwards;
+  padding: 0;
+  margin: 0;
+  font-family: 'Pixel', monospace; /* Ensuring your custom font is applied */
+  font-size: 40px; /* Adjust based on your design */
+  line-height: 1; /* Adjust for tight text fit */}
+
+/* Typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Cursor blink effect */
+@keyframes blink-caret {
+  0%, 100% { border-color: rgba(0, 255, 0, 0); }
+  50% { border-color: transparent; }
+}
+
+.resume-image {
+  width: 100%;
+  height: auto;
+  display: block; /* This removes any default inline padding and ensures it takes the full width */
+}
+
+
+main {
+  background-color: #1E1E1E;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+
+section {
+  padding: 20px; /* Internal spacing */
+  margin-bottom: calc(100vh - 20px); /* Adds bottom margin equal to the viewport height */
+
+}
