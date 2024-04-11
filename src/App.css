@@ -31,6 +31,16 @@ nav button:hover {
   color: #1E1E1E; /* Text color on hover */
 }
 
+.dragon-gif {
+  display: block; /* To center the gif, if needed */
+  margin: 0 auto; /* Center the gif */
+  max-width: 50%; /* Make the gif responsive */
+  width: 100px; /* Set the width to your desired size */
+  height: auto; /* Maintain aspect ratio */
+  transform: translateX(10px); /* Moves the GIF 20px to the right */
+
+}
+
 .download-button {
   display: inline-block;
   background-color: #1E1E1E; /* Match the background */

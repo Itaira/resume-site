@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import './App.css';
 import resume from './resume.png';
-
+import dragon from './dragon.gif';
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
       </header>
       <main>
         <section id="abouts">
+          <img src={dragon} alt="About Me" className="dragon-gif" />
           <h2>Abouts</h2>
           <p> Welcome to my professional sphere! I’m a dedicated DevOps Engineer, deeply passionate about innovating within the realm of software deployment and operations. With a year of intensive experience under my belt, I’ve honed my skills in orchestrating containerized applications with Kubernetes, leveraging the expansive capabilities of AWS, and employing Terraform for infrastructure as code to ensure efficient and scalable cloud environments. My journey has also been enriched by a strong foundation in Linux, which underpins my work with a robust and versatile operating system understanding.
 
