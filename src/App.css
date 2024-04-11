@@ -20,6 +20,7 @@ nav button {
   margin: 20px 30px; /* Increase spacing between buttons */
   padding: 10px 20px; /* Adjust padding as needed */
   font-family: 'Pixel', monospace; /* Optionally match the font style */
+  font-size: 20px; /* Adjust based on your design */
   cursor: pointer; /* Hand cursor on hover */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
