@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import './App.css';
 import resume from './resume.png';
+import resumepdf from './resume.pdf';
 import dragon from './dragon.gif';
 
 function App() {
@@ -37,8 +38,8 @@ Thank you for visiting, and I am excited to navigate the future of technology to
         <section id="resume">
           <h2>Resume</h2>
           <a 
-            href={resume} 
-            download="ItaiRaviv_Resume.png" 
+            href={resumepdf} 
+            download="ItaiRaviv_Resume.pdf" 
             className="download-button"
           >
             Download Resume
