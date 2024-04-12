@@ -1,7 +1,5 @@
-Hello. 
+Hello.
 
-This is the React app of my introduction site.
+This is the Main repo of my intoduction works.
 
-I am not a full-stack nor a frontend developer !
-
-So excuse the simplicity !
+Please go through my branches and check it out!
