@@ -61,6 +61,29 @@ nav button:hover {
   color: #1E1E1E;
 }
 
+.top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  display: inline-block;
+  background-color: #1E1E1E; /* Match the background */
+  color: white;
+  border: 2px solid white; /* White stroke */
+  margin-top: 0px; /* Add some space above the button */
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  text-decoration: none; /* Remove underline from the link */
+  font-family: 'Pixel', monospace;
+  font-size: 20px; /* Adjust based on your design */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.top-button:hover {
+  background-color: white;
+  color: #1E1E1E;
+}
+
 .typing-text {
   display: inline-block;
   white-space: nowrap;

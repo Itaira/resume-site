@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-scroll';
 import './App.css';
 import resume from './resume.png';
@@ -6,6 +6,31 @@ import resumepdf from './resume.pdf';
 import dragon from './dragon.gif';
 
 function App() {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight - 200) { // `window.innerHeight` is typically the height of the viewport and could be approx the height of your header
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -52,6 +77,9 @@ Thank you for visiting, and I am excited to navigate the future of technology to
           <p>Here are some important links.</p>
         </section>
       </main>
+      {showTopBtn && (
+        <button onClick={scrollToTop} className="top-button">Back to Top</button>
+      )}
     </div>
   );
 }
