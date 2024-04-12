@@ -4,6 +4,9 @@ import './App.css';
 import resume from './resume.png';
 import resumepdf from './resume.pdf';
 import dragon from './dragon.gif';
+import LinkedInPNG from './github.png'; // Importing the first image
+import GitHubPNG from './linkedin.png'; // Importing the second image
+
 
 function App() {
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -75,6 +78,19 @@ Thank you for visiting, and I am excited to navigate the future of technology to
         <section id="links">
           <h2>Links</h2>
           <p>Here are some important links.</p>
+          <div className="links-images">
+            <a href="https://www.linkedin.com/in/itairaviv/" target="_blank" rel="noopener noreferrer" className="image-link">
+              <img src={LinkedInPNG} alt="LinkedIn" />
+              <span className="image-text">LinkedIn</span>
+            </a>
+          </div>
+          <div className="links-images">
+            <a href="https://github.com/Itaira" target="_blank" rel="noopener noreferrer" className="image-link">
+              <img src={GitHubPNG} alt="GitHub" />
+              <span className="image-text">GitHub</span>
+            </a>
+          </div>
+
         </section>
       </main>
       {showTopBtn && (

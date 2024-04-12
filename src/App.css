@@ -10,6 +10,7 @@
   color: white;
   text-align: center;
   padding: 20px;
+  flex-wrap: nowrap;
   overflow: hidden; /* Keeps the content within the header */
 }
 
@@ -88,6 +89,7 @@ nav button:hover {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
+  flex-wrap: nowrap;
   border-right: .15em solid transparent; /* Initially transparent to not add visual width */
   animation: typing 4s steps(40, end) forwards, blink-caret .75s 6s step-end forwards;
   padding: 0;
@@ -114,6 +116,59 @@ nav button:hover {
   display: block; /* This removes any default inline padding and ensures it takes the full width */
   border-radius: 50px; /* Adjusts the roundness of the corners */
 
+}
+
+.links-images {
+  display: flex; /* Aligns children (images) in a row */
+  justify-content: center; /* Centers the images horizontally */
+  position: relative;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.links-images img {
+  border-radius: 30px; /* Adjusts the roundness of the corners */
+  margin: 0 10px; /* Adds space between the images */
+  border: 2px solid white; /* White stroke */
+  width: 30%; /* Sets the width of each image to less than half of the container, allowing for margin */
+  height: auto; /* Maintains the aspect ratio */
+  transition: filter 0.3s ease; /* Smooth transition for the filter effect */
+
+}
+
+.image-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1E1E1E;
+  font-size: 24px; /* Adjust font size as necessary */
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.3s ease;
+
+}
+
+.image-link:hover img {
+  filter: brightness(0) invert(1); /* Inverts the image to white */
+}
+
+.image-link:hover .image-text {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .image-container {
+    flex-direction: column; /* Stacks the images vertically on small screens */
+  }
+
+  .image-container img {
+    margin: 10px 0; /* Adjusts the margin for vertical stacking */
+    width: auto; /* Adjusts the width for small screens */
+  }
 }
 
 
